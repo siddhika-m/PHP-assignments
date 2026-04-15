@@ -14,19 +14,24 @@ body {
     margin: 0 auto;
 }
 
-.form-post {
+.main {
+    justify-content: space-around;
+}
+
+.upload-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
     gap: 20px;
+    margin-top: 50px;
 }
 
-.field {
+.form-post {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 20px;
     font-size: 1.2rem;
 }
 
@@ -37,13 +42,15 @@ body {
 }
 
 input,
-button {
+button,
+textarea {
     width: 400px;
     padding: 10px;
     border-radius: 10px;
     border: none;
     outline: none;
     font-size: 1.2rem;
+    outline: none;
 }
 
 button {
@@ -58,17 +65,24 @@ button {
     color: rgb(8, 108, 157);
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-preview {
+.uploaded-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 30px;
+}
+
+.marks-table{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marks-table th {
+    background-color: rgb(8, 108, 157);
+    color: white;
+    padding: 10px;
 }
